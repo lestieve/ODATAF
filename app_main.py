@@ -6,6 +6,7 @@ from odf_federation import *
 from app_tool_bar import *
 from app_federation import *
 from app_query import *
+from app_tools import *
 from app_dictionary import _, load_dictionary
 
 class App(Tk):
@@ -20,6 +21,7 @@ class App(Tk):
         self.load_settings()
         load_dictionary(lang=self.lang)
         self.save_path = "cache_file"
+        self.version = "1.43.1"
         self.count()
         if self.count_obj == 0:
             Tk.__init__(self)
@@ -76,7 +78,7 @@ class App(Tk):
         """Shows and manage menu bar
         """
         def alert():
-            showinfo("alert", _("Help !"))
+            msg("About", "Version : ODATAF {}".format(self.version), type="info", command_true=None, command_false=None)
         def add_mysql():
             self.app_federation.add_db_source(type="MYSQL")
         def add_postgres():
