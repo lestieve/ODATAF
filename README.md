@@ -1,4 +1,4 @@
-# ODATAF package
+# ODATAF
 
 **Open DATA Federator (ODATAF)**
 
