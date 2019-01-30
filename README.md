@@ -2,7 +2,7 @@
 
 **Open DATA Federator (ODATAF)**
 
-ODATAF is a module that allows you to perform SQL queries on different data sources by federating them into a "data federation". The data is collected in a single SQLITE database. The result of queries can then be exported into different file formats (Excel, CSV, Json, sql, ...).
+ODATAF is an application that allows you to perform SQL queries on different data sources by federating them into a "data federation". The data is collected in a single SQLITE database. The result of queries can then be exported into different file formats (Excel, CSV, Json, sql, ...).
 ODATAF provides a Tkinter interface for:
 - simply manage the import of new sources into the data federation,
 - define the links (joins) between the different data sources
